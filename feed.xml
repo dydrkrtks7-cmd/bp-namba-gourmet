@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[Namba Namba gourmet 안내]]></title>
-  <link>https://</link>
-  <description><![CDATA[Namba 정보 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-  <language>ko-KR</language>
-  <pubDate>Tue, 26 May 2026 15:27:44 GMT</pubDate>
-  <lastBuildDate>Tue, 26 May 2026 15:27:44 GMT</lastBuildDate>
-  <atom:link href="https:///feed.xml" rel="self" type="application/rss+xml" />
+  <title><![CDATA[정보]]></title>
+  <link>https://dydrkrtks7-cmd.github.io/bp-namba-gourmet</link>
+  <description><![CDATA[정보 - Namba gourmet 안내 관련 최신 소식 및 가이드]]></description>
+  <language>ko</language>
+  <pubDate>Wed, 10 Jun 2026 02:40:35 GMT</pubDate>
+  <lastBuildDate>Wed, 10 Jun 2026 02:40:35 GMT</lastBuildDate>
+  <atom:link href="https://dydrkrtks7-cmd.github.io/bp-namba-gourmet/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[Namba Namba gourmet 안내 - 공식 홈페이지 오픈 안내]]></title>
-      <link>https:///</link>
-      <guid isPermaLink="true">https:///</guid>
-      <description><![CDATA[Namba 정보 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-      <pubDate>Tue, 26 May 2026 15:27:44 GMT</pubDate>
+      <title><![CDATA[정보 해결 방법 총정리 — 전문가가 알려주는 5가지 팁]]></title>
+      <link>https://dydrkrtks7-cmd.github.io/bp-namba-gourmet/posts/guide-001-zq7wo9.html</link>
+      <guid isPermaLink="true">https://dydrkrtks7-cmd.github.io/bp-namba-gourmet/posts/guide-001-zq7wo9.html</guid>
+      <description><![CDATA[### 제목: 창업자 눈높이의 가격대별 원칙 : 단골 손님 시점에서 사장 몰래 메뉴별 원가 계산 #### 구체적 맥락 서비스업계와 로컬 비즈니스 뒷이야기를 주제로, 이번 글은 룸 단위 서비스업의 가격대별 원가 구조와 마진율 분포에 초점을 맞추고 있습니다. 상권 변동 트]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Namba gourmet 안내 처음 알아볼 때 실제로 많이 묻는 질문 5가지]]></title>
+      <link>https://dydrkrtks7-cmd.github.io/bp-namba-gourmet/posts/qa-002-zq7wo9.html</link>
+      <guid isPermaLink="true">https://dydrkrtks7-cmd.github.io/bp-namba-gourmet/posts/qa-002-zq7wo9.html</guid>
+      <description><![CDATA[### 포스트 DNA f1dd3a5a #### 제목: 창작한 제목: "단골 손님의 눈으로 본 홍대 상권 폐업과 살아남은 업소" 아, 진짜... 2023년 홍대로 상권에서 폐업한 업소들의 공통된 원인과 살아남은 곳들의 차별화 전략을 파악하는 것은 매우 중요합니다. 이번 ]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
     </item>
 </channel>
 </rss>
