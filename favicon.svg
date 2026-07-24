@@ -1,8 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-  <defs><linearGradient id="bgnamb" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#311b92"/><stop offset="100%" stop-color="#bf360c"/>
-  </linearGradient></defs>
-  <rect width="32" height="32" rx="6" fill="url(#bgnamb)"/>
-  <polygon points="16,2 28,16 16,30 4,16" fill="rgba(49,27,146,0.9)" stroke="rgba(191,54,12,0.6)" stroke-width="2"/>
-  <text x="16" y="21" text-anchor="middle" fill="#fff" font-size="8" font-weight="700" font-family="system-ui">NA</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img">
+  <title>Namba gourmet 안내</title>
+  <rect width="64" height="64" rx="12" fill="hsl(258 42% 21%)"/>
+  <path d="M64 0v26L38 0Z" fill="hsl(50 68% 62%)" opacity="0.16"/>
+  <g transform="rotate(180 32 32)"><path d="M32 12 52 32 32 52 12 32Z" fill="none" stroke="hsl(258 24% 96%)" stroke-width="8" stroke-linejoin="round"/><path d="M32 24 40 32 32 40 24 32Z" fill="hsl(50 68% 62%)"/></g>
 </svg>
