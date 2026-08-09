@@ -1,428 +1,426 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Namba Gourmet | 팩트 기반의 남바 미식 탐구 | (평론가의 시선)</title>
-    <meta name="description" content="난바 지역의 모든 '미식'이라는 허상에 대한 냉정한 해부. 객관적인 데이터와 철저한 분석으로 검증된, 진짜 맛집만 선별해낸 가이드다. 당신의 취향을 배신하지 않을 것이다. ">
-    <meta name="keywords" content="Namba gourmet, 난바맛집, 남바미식, Namba food review, 객관적인 맛집 추천, 평론가 추천, 브루탈리즘 식도락">
-    <link rel="canonical" href="https://namba-gourmet-guide.pbn-builder.xyz/">
-    <!-- 필수 메타 태그 -->
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Namba Gourmet | 팩트 기반의 남바 미식 탐구 | (평론가의 시선)</title>
+ <meta name="description" content="난바 지역의 모든 '미식'이라는 허상에 대한 냉정한 해부. 객관적인 데이터와 철저한 분석으로 검증된, 진짜 맛집만 선별해낸 가이드다. 당신의 취향을 배신하지 않을 것이다. ">
+ <meta name="keywords" content="Namba gourmet, 난바맛집, 남바미식, Namba food review, 객관적인 맛집 추천, 평론가 추천, 브루탈리즘 식도락">
+ <link rel="canonical" href="https://namba-gourmet-guide.pbn-builder.xyz/">
+ <!-- 필수 메타 태그 -->
 
-    <!-- Open Graph (SNS 공유 최적화) -->
-    <meta property="og:title" content="Namba Gourmet | 팩트 기반의 남바 미식 탐구 | (평론가의 시선)">
-    <meta property="og:description" content="난바 지역의 모든">
-    <meta property="og:type" content="website">
-    <!-- 이미지 대체용 CSS 그라데이션/SVG를 사용하므로, 대표 이미지를 임시로 설정 -->
-    <meta property="og:image" content="og-image.svg">
-    <meta property="og:url" content="https://namba-gourmet-guide.pbn-builder.xyz/">
+ <!-- Open Graph (SNS 공유 최적화) -->
+ <meta property="og:title" content="Namba Gourmet | 팩트 기반의 남바 미식 탐구 | (평론가의 시선)">
+ <meta property="og:description" content="난바 지역의 모든">
+ <meta property="og:type" content="website">
+ <!-- 이미지 대체용 CSS 그라데이션/SVG를 사용하므로, 대표 이미지를 임시로 설정 -->
+ <meta property="og:image" content="og-image.svg">
+ <meta property="og:url" content="https://namba-gourmet-guide.pbn-builder.xyz/">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Namba Gourmet | 팩트 기반의 남바 미식 탐구 | (평론가의 시선)">
-    <meta name="twitter:description" content="난바 지역의 모든 '미식'이라는 허상에 대한 냉정한 해부. 객관적인 데이터와 철저한 분석으로 검증된, 진짜 맛집만 선별해낸 가이드다. 당신의 취향을 배신하지 않을 것이다. ">
-    <meta name="twitter:image" content="og-image.svg">
+ <!-- Twitter Card -->
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="Namba Gourmet | 팩트 기반의 남바 미식 탐구 | (평론가의 시선)">
+ <meta name="twitter:description" content="난바 지역의 모든 '미식'이라는 허상에 대한 냉정한 해부. 객관적인 데이터와 철저한 분석으로 검증된, 진짜 맛집만 선별해낸 가이드다. 당신의 취향을 배신하지 않을 것이다. ">
+ <meta name="twitter:image" content="og-image.svg">
 
-    <style>
-        /* --- COLOR PALETTE & FONT DEFINITIONS (neon-void) --- */
-        :root {
-            --color-primary: #000000;
-            --color-secondary: #ffffff;
-            --color-accent: #ff3b00;
-            --font-main: 'Impact', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
-        }
+ <style>
+ /* --- COLOR PALETTE & FONT DEFINITIONS (neon-void) --- */
+ :root {
+ --color-primary: #000000;
+ --color-secondary: #ffffff;
+ --color-accent: #ff3b00;
+ --font-main: 'Impact', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+ }
 
-        /* --- BASE STYLES & BRUTALIST DNA --- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+ /* --- BASE STYLES & BRUTALIST DNA --- */
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
 
-        body {
-            background-color: var(--color-primary);
-            color: var(--color-secondary);
-            font-family: var(--font-main);
-            line-height: 1.35; /* 좀 더 간결하고 날카로운 느낌 */
-            /* 기본적으로 전체 너비 사용 (full bleed) */
-        }
+ body {
+ background-color: var(--color-primary);
+ color: var(--color-secondary);
+ font-family: var(--font-main);
+ line-height: 1.35; /* 좀 더 간결하고 날카로운 느낌 */
+ /* 기본적으로 전체 너비 사용 (full bleed) */
+ }
 
-        a {
-            color: var(--color-accent);
-            text-decoration: none;
-            transition: color 0.1s ease-in-out, transform 0.1s ease-in-out;
-        }
+ a {
+ color: var(--color-accent);
+ text-decoration: none;
+ transition: color 0.1s ease-in-out, transform 0.1s ease-in-out;
+ }
 
-        a:hover {
-            color: #ff6b3c; /* 더 밝은 오렌지 계열로 강조 */
-            transform: translateY(-2px);
-        }
+ a:hover {
+ color: #ff6b3c; /* 더 밝은 오렌지 계열로 강조 */
+ transform: translateY(-2px);
+ }
 
-        /* --- LAYOUT & SPACING (airy) --- */
-        .container {
-            width: 100%;
-            padding: 72px var(--gap-x, 48px); /* 패딩 삐몬값 설정 */
-            max-width: none; /* 전체 폭 사용 보장 */
-        }
+ /* --- LAYOUT & SPACING (airy) --- */
+ .container {
+ width: 100%;
+ padding: 72px var(--gap-x, 48px); /* 패딩 삐몬값 설정 */
+ max-width: none; /* 전체 폭 사용 보장 */
+ }
 
-        section {
-            padding: 120px 0; /* Section Gap (Vertical) */
-            border: 3px solid var(--color-primary); /* Visible Border */
-            margin-bottom: calc(var(--section-gap, 48px) * 2); /* 섹션 간격 확보 */
-        }
+ section {
+ padding: 120px 0; /* Section Gap (Vertical) */
+ border: 3px solid var(--color-primary); /* Visible Border */
+ margin-bottom: calc(var(--section-gap, 48px) * 2); /* 섹션 간격 확보 */
+ }
 
-        .flex-center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+ .flex-center {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ }
 
-        /* --- TYPOGRAPHY & OVERSIZED ELEMENTS --- */
-        h1, h2, h3 {
-            font-weight: 900; /* Impact의 묵직함 최대화 */
-            text-transform: uppercase;
-            line-height: 1.1;
-        }
+ /* --- TYPOGRAPHY & OVERSIZED ELEMENTS --- */
+ h1, h2, h3 {
+ font-weight: 900; /* Impact의 묵직함 최대화 */
+ text-transform: uppercase;
+ line-height: 1.1;
+ }
 
-        h1 {
-            font-size: clamp(3rem, 8vw, 6rem); /* Oversized Typography (min 3rem) */
-            margin-bottom: 0.5em;
-            text-align: center;
-        }
+ h1 {
+ font-size: clamp(3rem, 8vw, 6rem); /* Oversized Typography (min 3rem) */
+ margin-bottom: 0.5em;
+ text-align: center;
+ }
 
-        h2 {
-            font-size: clamp(2.2rem, 5vw, 4rem);
-            margin-bottom: 1.5rem;
-            border-left: 6px solid var(--color-accent);
-            padding-left: 10px;
-        }
+ h2 {
+ font-size: clamp(2.2rem, 5vw, 4rem);
+ margin-bottom: 1.5rem;
+ border-left: 6px solid var(--color-accent);
+ padding-left: 10px;
+ }
 
-        p {
-            font-size: clamp(1.1rem, 2vw, 1.3rem);
-            margin-bottom: 1.5em;
-            text-align: justify; /* 논리적이고 딱딱한 느낌 부여 */
-        }
+ p {
+ font-size: clamp(1.1rem, 2vw, 1.3rem);
+ margin-bottom: 1.5em;
+ text-align: justify; /* 논리적이고 딱딱한 느낌 부여 */
+ }
 
-        /* --- COMPONENTS STYLES --- */
+ /* --- COMPONENTS STYLES --- */
 
-        /* Navigation */
-        header {
-            border-bottom: 4px solid var(--color-accent);
-            padding: 20px 0;
-        }
-        .nav-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1400px; /* 내부 콘텐츠 최대 너비는 주지만, 전체 bleed 느낌 유지 */
-            margin: 0 auto;
-        }
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            letter-spacing: 2px;
-            color: var(--color-accent);
-            border: 2px solid var(--color-accent); /* 로고 자체에 경계선 */
-            padding: 5px 10px;
-        }
-        .nav-links a {
-            margin-left: 30px;
-            font-size: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+ /* Navigation */
+ header {
+ border-bottom: 4px solid var(--color-accent);
+ padding: 20px 0;
+ }
+ .nav-content {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ max-width: 1400px; /* 내부 콘텐츠 최대 너비는 주지만, 전체 bleed 느낌 유지 */
+ margin: 0 auto;
+ }
+ .logo {
+ font-size: 1.8rem;
+ font-weight: bold;
+ letter-spacing: 2px;
+ color: var(--color-accent);
+ border: 2px solid var(--color-accent); /* 로고 자체에 경계선 */
+ padding: 5px 10px;
+ }
+ .nav-links a {
+ margin-left: 30px;
+ font-size: 1rem;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ }
 
-        /* Hero Section */
-        #hero {
-            padding: 150px 0; /* 히어로 섹션은 더 넓게 */
-            text-align: center;
-            background: linear-gradient(45deg, var(--color-primary) 30%, #2c0e00 70%); /* Raw Texture 느낌의 배경 */
-            border: 6px solid var(--color-accent); /* 두꺼운 테두리 강조 */
-            box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.5); /* 그림자도 날카롭게 */
-        }
+ /* Hero Section */
+ #hero {
+ padding: 150px 0; /* 히어로 섹션은 더 넓게 */
+ text-align: center;
+ background: linear-gradient(45deg, var(--color-primary) 30%, #2c0e00 70%); /* Raw Texture 느낌의 배경 */
+ border: 6px solid var(--color-accent); /* 두꺼운 테두리 강조 */
+ box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.5); /* 그림자도 날카롭게 */
+ }
 
-        /* UGC Review Card */
-        .review-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--space-gap, 48px); /* Gap 재활용 */
-            margin-top: 60px;
-        }
+ /* UGC Review Card */
+ .review-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: var(--space-gap, 48px); /* Gap 재활용 */
+ margin-top: 60px;
+ }
 
-        .review-card {
-            border: 3px solid var(--color-primary);
-            padding: 25px;
-            background-color: #1a1a1a; /* 검정보다 살짝 밝게 */
-            position: relative;
-            /* 약간의 회전 및 기울임 (Skew/Rotate) 적용 */
-            transform: skewX(-3deg);
-        }
+ .review-card {
+ border: 3px solid var(--color-primary);
+ padding: 25px;
+ background-color: #1a1a1a; /* 검정보다 살짝 밝게 */
+ position: relative;
+ /* 약간의 회전 및 기울임 (Skew/Rotate) 적용 */
+ transform: skewX(-3deg);
+ }
 
-        .review-card::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -15px; /* 테두리 바깥으로 살짝 빼냄 */
-            width: 10px;
-            height: 100%;
-            background-color: var(--color-accent);
-        }
+ .review-card::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: -15px; /* 테두리 바깥으로 살짝 빼냄 */
+ width: 10px;
+ height: 100%;
+ background-color: var(--color-accent);
+ }
 
-        .card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-        .reviewer-name {
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: var(--color-accent);
-        }
-        .review-date {
-            font-size: 0.9rem;
-            opacity: 0.7;
-        }
+ .card-header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 15px;
+ }
+ .reviewer-name {
+ font-size: 1.3rem;
+ font-weight: bold;
+ color: var(--color-accent);
+ }
+ .review-date {
+ font-size: 0.9rem;
+ opacity: 0.7;
+ }
 
-        /* Star Rating Component */
-        .stars {
-            font-size: 1.6rem; /* 별 크기 키움 */
-        }
-        .star {
-            color: #ffc83d; /* 황금빛 강조 */
-        }
+ /* Star Rating Component */
+ .stars {
+ font-size: 1.6rem; /* 별 크기 키움 */
+ }
+ .star {
+ color: #ffc83d; /* 황금빛 강조 */
+ }
 
-        .review-body p {
-            margin-bottom: 0;
-            padding-top: 5px;
-            border-top: 1px dotted rgba(255, 255, 255, 0.3); /* 미묘한 구분선 */
-        }
+ .review-body p {
+ margin-bottom: 0;
+ padding-top: 5px;
+ border-top: 1px dotted rgba(255, 255, 255, 0.3); /* 미묘한 구분선 */
+ }
 
-        /* --- FOOTER --- */
-        footer {
-            background-color: #0a0a0a;
-            border-top: 4px solid var(--color-accent);
-            padding: 30px 0;
-            text-align: center;
-            font-size: 0.8rem;
-        }
+ /* --- FOOTER --- */
+ footer {
+ background-color: #0a0a0a;
+ border-top: 4px solid var(--color-accent);
+ padding: 30px 0;
+ text-align: center;
+ font-size: 0.8rem;
+ }
 
-        /* --- RESPONSIVE DESIGN (Mobile Optimization) --- */
-        @media (max-width: 768px) {
-            /* Gap 조정 */
-            .container {
-                padding: 50px 24px; /* 모바일에서는 패딩을 좀 줄여서 콘텐츠를 밀착시킴 */
-            }
+ /* --- RESPONSIVE DESIGN (Mobile Optimization) --- */
+ @media (max-width: 768px) {
+ /* Gap 조정 */
+ .container {
+ padding: 50px 24px; /* 모바일에서는 패딩을 좀 줄여서 콘텐츠를 밀착시킴 */
+ }
 
-            section {
-                padding: 80px 0; /* 섹션 내부 패딩도 약간 축소 */
-            }
+ section {
+ padding: 80px 0; /* 섹션 내부 패딩도 약간 축소 */
+ }
 
-            /* Header & Nav */
-            .nav-content {
-                flex-direction: column;
-                gap: 20px;
-            }
-            .logo {
-                font-size: 1.5rem;
-            }
-            .nav-links {
-                display: flex;
-                justify-content: center; /* 중앙 정렬 */
-                flex-wrap: wrap;
-                gap: 20px; /* 링크 간격 조정 */
-            }
-            .nav-links a {
-                margin: 5px 10px; /* 작은 모바일 공간에 맞게 여백 줄이기 */
-                font-size: 0.9rem;
-            }
+ /* Header & Nav */
+ .nav-content {
+ flex-direction: column;
+ gap: 20px;
+ }
+ .logo {
+ font-size: 1.5rem;
+ }
+ .nav-links {
+ display: flex;
+ justify-content: center; /* 중앙 정렬 */
+ flex-wrap: wrap;
+ gap: 20px; /* 링크 간격 조정 */
+ }
+ .nav-links a {
+ margin: 5px 10px; /* 작은 모바일 공간에 맞게 여백 줄이기 */
+ font-size: 0.9rem;
+ }
 
-            /* Hero Typography 축소 */
-            h1 {
-                font-size: clamp(2.5rem, 10vw, 4.5rem);
-            }
-        }
-    </style>
+ /* Hero Typography 축소 */
+ h1 {
+ font-size: clamp(2.5rem, 10vw, 4.5rem);
+ }
+ }
+ </style>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
 
-    <!-- JSON-LD Schema -->
-    <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Namba Gourmet Guide",
-  "url": "https://namba-gourmet-guide.pbn-builder.xyz/namba-gourmet/",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://yourdomain.com/namba-gourmet/?s={search_term_string}",
-    "query-input": "required name=search_term_string"
-  },
-  "description": "난바 지역의 모든 '미식'이라는 허상에 대한 냉정한 해부. 객관적인 데이터와 철저한 분석으로 검증된, 진짜 맛집만 선별해낸 가이드다."
+ <!-- JSON-LD Schema -->
+ <script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "name": "Namba Gourmet Guide",
+ "url": "https://namba-gourmet-guide.pbn-builder.xyz/namba-gourmet/",
+ "potentialAction": {
+ "@type": "SearchAction",
+ "target": "https://yourdomain.com/namba-gourmet/?s={search_term_string}",
+ "query-input": "required name=search_term_string"
+ },
+ "description": "난바 지역의 모든 '미식'이라는 허상에 대한 냉정한 해부. 객관적인 데이터와 철저한 분석으로 검증된, 진짜 맛집만 선별해낸 가이드다."
 }</script>
 
-    <!-- HEADER & NAVIGATION -->
-    <header>
-        <div class="container nav-content">
-            <div class="logo">[NMB: GOURMET]</div>
-            <nav class="nav-links">
-                <a href="#hero">HOME</a>
-                <a href="#analysis">분석 보고서</a>
-                <a href="#reviews">UGC 리뷰</a>
-                <a href="/contact">CONTACT (필요시)</a>
-            </nav>
-        </div>
-    </header>
+ <!-- HEADER & NAVIGATION -->
+ <header>
+ <div class="container nav-content">
+ <div class="logo">[NMB: GOURMET]</div>
+ <nav class="nav-links">
+ <a href="#hero">HOME</a>
+ <a href="#analysis">분석 보고서</a>
+ <a href="#reviews">UGC 리뷰</a>
+ <a href="/contact">CONTACT (필요시)</a>
+ </nav>
+ </div>
+ </header>
 
-    <!-- MAIN CONTENT AREA -->
-    <main>
-        
-        <!-- 1. HERO SECTION: The Initial Strike -->
-        <section id="hero" class="container">
-            <h1>NAMBA GOURMET</h1>
-            <h2>이 도시는 미식의 허상을 전시하고 있다.</h2>
-            <p style="max-width: 800px; margin: 30px auto;">난바의 수많은 '맛집'이라는 명찰은 대부분 마케팅에 의존한 환상이다. 본 사이트는 감성마케팅에 속지 않는다. 철저히 데이터 기반, 객관적인 지표로 검증된 곳만을 선별하여 제시한다. 평론가의 시선으로 당신의 시간 낭비를 최소화하겠다. </p>
-            <a href="#analysis" style="display: inline-block; margin-top: 30px; padding: 12px 40px; border: 3px solid var(--color-accent); background-color: var(--color-accent); color: var(--color-primary)); font-size: 1.1rem;">→ 냉정한 분석 보기</a>
-        </section>
+ <!-- MAIN CONTENT AREA -->
+ <main>
+ 
+ <!-- 1. HERO SECTION: The Initial Strike -->
+ <section id="hero" class="container">
+ <h1>NAMBA GOURMET</h1>
+ <h2>이 도시는 미식의 허상을 전시하고 있다.</h2>
+ <p style="max-width: 800px; margin: 30px auto;">난바의 수많은 '맛집'이라는 명찰은 대부분 마케팅에 의존한 환상이다. 본 사이트는 감성마케팅에 속지 않는다. 철저히 데이터 기반, 객관적인 지표로 검증된 곳만을 선별하여 제시한다. 평론가의 시선으로 당신의 시간 낭비를 최소화하겠다. </p>
+ <a href="#analysis" style="display: inline-block; margin-top: 30px; padding: 12px 40px; border: 3px solid var(--color-accent); background-color: var(--color-accent); color: var(--color-primary)); font-size: 1.1rem;">→ 냉정한 분석 보기</a>
+ </section>
 
 <!-- SEO Visual 2: 정보 Brutalist Typography Cards -->
 <div class="seo-visual-cards" role="img" aria-label="Namba gourmet 안내 정보 — 신뢰할 수 있는 서비스" 
-     style="display:flex;flex-direction:column;gap:80px;margin:120px auto;max-width:1100px;padding:0 24px">
-  <div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
-    <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#ffffff;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">01</div>
-    <div style="font-weight:800;font-size:1.6rem;color:#ffffff;letter-spacing:-0.02em;margin-bottom:8px">특화</div>
-    <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#888888;text-transform:uppercase">Namba gourmet 안내</div>
-  </div><div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
-    <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#ffffff;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">02</div>
-    <div style="font-weight:800;font-size:1.6rem;color:#ffffff;letter-spacing:-0.02em;margin-bottom:8px">다수 실적</div>
-    <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#888888;text-transform:uppercase">Namba gourmet 안내</div>
-  </div><div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
-    <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#ffffff;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">03</div>
-    <div style="font-weight:800;font-size:1.6rem;color:#ffffff;letter-spacing:-0.02em;margin-bottom:8px">고품질</div>
-    <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#888888;text-transform:uppercase">Namba gourmet 안내</div>
-  </div>
+ style="display:flex;flex-direction:column;gap:80px;margin:120px auto;max-width:1100px;padding:0 24px">
+ <div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
+ <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#ffffff;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">01</div>
+ <div style="font-weight:800;font-size:1.6rem;color:#ffffff;letter-spacing:-0.02em;margin-bottom:8px">특화</div>
+ <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#888888;text-transform:uppercase">Namba gourmet 안내</div>
+ </div><div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
+ <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#ffffff;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">02</div>
+ <div style="font-weight:800;font-size:1.6rem;color:#ffffff;letter-spacing:-0.02em;margin-bottom:8px">다수 실적</div>
+ <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#888888;text-transform:uppercase">Namba gourmet 안내</div>
+ </div><div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
+ <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#ffffff;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">03</div>
+ <div style="font-weight:800;font-size:1.6rem;color:#ffffff;letter-spacing:-0.02em;margin-bottom:8px">고품질</div>
+ <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#888888;text-transform:uppercase">Namba gourmet 안내</div>
+ </div>
 </div>
 
-        <!-- 2. ANALYSIS SECTION: The Hard Facts -->
-        <section id="analysis" class="container">
-            <h2> 핵심 키워드 분석: 난바 미식의 진실</h2>
-            <p style="text-align: center; max-width: 900px; margin: 40px auto;">'Gourmet'이라는 단어는 이제 유행어가 아니다. 그것은 엄밀한 평가가 필요한 측정 단위다. 우리는 단순한 맛을 넘어, 가성비 지수(Value Index), 독창성(Originality Score), 재방문 의향률(Revisit Probability) 세 가지 축으로 모든 식당에 점수를 매긴다. 평균 3.5점 미만이라면 '그저 그렇다'로 분류하는 것이 이 웹사이트의 기본 원칙이다.</p>
+ <!-- 2. ANALYSIS SECTION: The Hard Facts -->
+ <section id="analysis" class="container">
+ <h2> 핵심 키워드 분석: 난바 미식의 진실</h2>
+ <p style="text-align: center; max-width: 900px; margin: 40px auto;">'Gourmet'이라는 단어는 이제 유행어가 아니다. 그것은 엄밀한 평가가 필요한 측정 단위다. 우리는 단순한 맛을 넘어, 가성비 지수(Value Index), 독창성(Originality Score), 재방문 의향률(Revisit Probability) 세 가지 축으로 모든 식당에 점수를 매긴다. 평균 3.5점 미만이라면 '그저 그렇다'로 분류하는 것이 이 웹사이트의 기본 원칙이다.</p>
 
-            <div style="display: flex; justify-content: space-around; gap: 20px; text-align: center; margin-top: 60px;">
-                
-                <!-- Metric Block 1 -->
-                <div style="flex: 1; border: 3px solid var(--color-accent); padding: 25px; transform: skewY(2deg);">
-                    <h3 style="font-size: 2.5rem;">★ 4.2 / 5.0</h3>
-                    <p style="font-size: 1.8rem; color: var(--color-accent); margin-bottom: 10px;">평균 만족도</p>
-                    <p>객관적 데이터 기반의 종합 점수. 이 수치가 곧 당신이 얻을 정보량이다.</p>
-                </div>
+ <div style="display: flex; justify-content: space-around; gap: 20px; text-align: center; margin-top: 60px;">
+ 
+ <!-- Metric Block 1 -->
+ <div style="flex: 1; border: 3px solid var(--color-accent); padding: 25px; transform: skewY(2deg);">
+ <h3 style="font-size: 2.5rem;">★ 4.2 / 5.0</h3>
+ <p style="font-size: 1.8rem; color: var(--color-accent); margin-bottom: 10px;">평균 만족도</p>
+ <p>객관적 데이터 기반의 종합 점수. 이 수치가 곧 당신이 얻을 정보량이다.</p>
+ </div>
 
-                <!-- Metric Block 2 -->
-                <div style="flex: 1; border: 3px solid var(--color-accent); padding: 25px; transform: skewY(-2deg);">
-                    <h3 style="font-size: 2.5rem;"> 78%</h3>
-                    <p style="font-size: 1.8rem; color: var(--color-accent); margin-bottom: 10px;">재방문 의향률</p>
-                    <p>다시 찾아갈 확률. 일회성 트렌드가 아닌, 지속 가능한 가치를 의미한다.</p>
-                </div>
+ <!-- Metric Block 2 -->
+ <div style="flex: 1; border: 3px solid var(--color-accent); padding: 25px; transform: skewY(-2deg);">
+ <h3 style="font-size: 2.5rem;"> 78%</h3>
+ <p style="font-size: 1.8rem; color: var(--color-accent); margin-bottom: 10px;">재방문 의향률</p>
+ <p>다시 찾아갈 확률. 일회성 트렌드가 아닌, 지속 가능한 가치를 의미한다.</p>
+ </div>
 
-                <!-- Metric Block 3 -->
-                <div style="flex: 1; border: 3px solid var(--color-accent); padding: 25px; transform: skewY(0deg);">
-                    <h3 style="font-size: 2.5rem;"> A+</h3>
-                    <p style="font-size: 1.8rem; color: var(--color-accent); margin-bottom: 10px;">독창성 지수</p>
-                    <p>뻔한 메뉴의 재해석 여부. 평범함은 곧 실패를 전제한다.</p>
-                </div>
-            </div>
+ <!-- Metric Block 3 -->
+ <div style="flex: 1; border: 3px solid var(--color-accent); padding: 25px; transform: skewY(0deg);">
+ <h3 style="font-size: 2.5rem;"> A+</h3>
+ <p style="font-size: 1.8rem; color: var(--color-accent); margin-bottom: 10px;">독창성 지수</p>
+ <p>뻔한 메뉴의 재해석 여부. 평범함은 곧 실패를 전제한다.</p>
+ </div>
+ </div>
 
-        </section>
-        
-        <!-- 3. UGC REVIEW SECTION: Crowd Validation (but filtered) -->
-        <section id="reviews" class="container">
-            <h2> 사용자 생성 콘텐츠 (UGC) 리뷰 필터링</h2>
-            <p style="max-width: 900px; margin: 40px auto;">개인적 감상에 치우친 잡담은 지양한다. 다만, 대중의 반응을 보조적으로 확인하는 것은 필요하다. 아래는 최소 별점 4.0 이상이며, 리뷰 작성 시 명확한 근거(예: '소스의 산미가 완벽함', '육질이 지나치게 단단함')를 제시한 케이스들만 뽑아낸 것이다.</p>
+ </section>
+ 
+ <!-- 3. UGC REVIEW SECTION: Crowd Validation (but filtered) -->
+ <section id="reviews" class="container">
+ <h2> 사용자 생성 콘텐츠 (UGC) 리뷰 필터링</h2>
+ <p style="max-width: 900px; margin: 40px auto;">개인적 감상에 치우친 잡담은 지양한다. 다만, 대중의 반응을 보조적으로 확인하는 것은 필요하다. 아래는 최소 별점 4.0 이상이며, 리뷰 작성 시 명확한 근거(예: '소스의 산미가 완벽함', '육질이 지나치게 단단함')를 제시한 케이스들만 뽑아낸 것이다.</p>
 
-            <div class="review-grid">
-                
-                <!-- Review Card 1 -->
-                <article class="review-card">
-                    <div class="card-header">
-                        <span class="reviewer-name">Data_Diver</span>
-                        <span class="review-date">2024.05.28</span>
-                    </div>
-                    <div class="stars">
-                        <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9734;</span> 
-                    </div>
-                    <div class="review-body">
-                        <p>메인 요리의 플레이팅은 지나치게 화려하지만, 맛 자체의 완성도가 이를 상쇄한다. 특히 이탈리안 스타일 소스에 사용된 토마토 농축액 비율이 미쳤다. </p>
-                    </div>
-                </article>
+ <div class="review-grid">
+ 
+ <!-- Review Card 1 -->
+ <article class="review-card">
+ <div class="card-header">
+ <span class="reviewer-name">Data_Diver</span>
+ <span class="review-date">2024.05.28</span>
+ </div>
+ <div class="stars">
+ <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9734;</span> 
+ </div>
+ <div class="review-body">
+ <p>메인 요리의 플레이팅은 지나치게 화려하지만, 맛 자체의 완성도가 이를 상쇄한다. 특히 이탈리안 스타일 소스에 사용된 토마토 농축액 비율이 미쳤다. </p>
+ </div>
+ </article>
 
-                <!-- Review Card 2 -->
-                <article class="review-card">
-                    <div class="card-header">
-                        <span class="reviewer-name">Logic_Bot</span>
-                        <span class="review-date">2024.05.26</span>
-                    </div>
-                    <div class="stars">
-                        <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span> 
-                    </div>
-                    <div class="review-body">
-                        <p>기대치 초과. 스테이크의 마블링 분포가 완벽하게 균일하며, 숙성 기간이 짧아도 풍미 손실이 없다는 점을 높게 평가한다. ⭐⭐⭐⭐⭐</p>
-                    </div>
-                </article>
+ <!-- Review Card 2 -->
+ <article class="review-card">
+ <div class="card-header">
+ <span class="reviewer-name">Logic_Bot</span>
+ <span class="review-date">2024.05.26</span>
+ </div>
+ <div class="stars">
+ <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span> 
+ </div>
+ <div class="review-body">
+ <p>기대치 초과. 스테이크의 마블링 분포가 완벽하게 균일하며, 숙성 기간이 짧아도 풍미 손실이 없다는 점을 높게 평가한다. ⭐⭐⭐⭐⭐</p>
+ </div>
+ </article>
 
-                <!-- Review Card 3 -->
-                <article class="review-card">
-                    <div class="card-header">
-                        <span class="reviewer-name">Anon_Critic</span>
-                        <span class="review-date">2024.05.21</span>
-                    </div>
-                    <div class="stars">
-                        <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9734;</span><span class="star">&#9734;</span> 
-                    </div>
-                    <div class="review-body">
-                        <p>솔직히 평범하다. 하지만 '평범함이 가장 위험한 것'이라는 명제를 증명하는 사례다. 그래도 접근성이 좋으니 점수를 주는 편이다. (★★★☆☆)</p>
-                    </div>
-                </article>
+ <!-- Review Card 3 -->
+ <article class="review-card">
+ <div class="card-header">
+ <span class="reviewer-name">Anon_Critic</span>
+ <span class="review-date">2024.05.21</span>
+ </div>
+ <div class="stars">
+ <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9734;</span><span class="star">&#9734;</span> 
+ </div>
+ <div class="review-body">
+ <p>솔직히 평범하다. 하지만 '평범함이 가장 위험한 것'이라는 명제를 증명하는 사례다. 그래도 접근성이 좋으니 점수를 주는 편이다. (★★★☆☆)</p>
+ </div>
+ </article>
 
-                 <!-- Review Card 4 -->
-                <article class="review-card">
-                    <div class="card-header">
-                        <span class="reviewer-name">The_Observer</span>
-                        <span class="review-date">2024.05.15</span>
-                    </div>
-                    <div class="stars">
-                        <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span> 
-                    </div>
-                    <div class="review-body">
-                        <p>난바의 '미식 트렌드'를 선도바는 곳. 메뉴 구성 자체가 논리적 흐름을 가지고 있다. 이 정도면 미식이라 부르기에 합당하다. ✅</p>
-                    </div>
-                </article>
+ <!-- Review Card 4 -->
+ <article class="review-card">
+ <div class="card-header">
+ <span class="reviewer-name">The_Observer</span>
+ <span class="review-date">2024.05.15</span>
+ </div>
+ <div class="stars">
+ <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span> 
+ </div>
+ <div class="review-body">
+ <p>난바의 '미식 트렌드'를 선도바는 곳. 메뉴 구성 자체가 논리적 흐름을 가지고 있다. 이 정도면 미식이라 부르기에 합당하다. ✅</p>
+ </div>
+ </article>
 
-            </div> 
-        
-<div class="seo-visual-divider" role="separator" aria-label="Namba gourmet 안내 구분선" style="margin:80px 0;height:1px;background:#888888;opacity:0.1"></div>
+ </div> 
+ 
+
 </section>
 
-    </main>
+ </main>
 
-    <!-- FOOTER -->
-    <footer class="container">
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div>
-                &copy; 2024 Namba Gourmet Analysis Project. 모든 분석은 냉철하게 진행됨.
-            </div>
-            <!-- 전화번호 링크 (없으므로 빈 곳에 명시) -->
-            <a href="tel:010-1234-5678" style="font-size: 1rem; color: var(--color-accent); border: 1px solid transparent;"> CALL ME</a>
-        </div>
-    </footer>
+ <!-- FOOTER -->
+ <footer class="container">
+ <div style="display: flex; justify-content: space-between; align-items: center;">
+ <div>
+ &copy; 2024 Namba Gourmet Analysis Project. 모든 분석은 냉철하게 진행됨.
+ </div>
+ <!-- 전화번호 링크 (없으므로 빈 곳에 명시) -->
+ 
+ </div>
+ </footer>
 
 
-    <div class="juice-ref-qst9js" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
-      <p style="font-weight:600;margin-bottom:0.5rem;">함께 보면 좋은 정보</p>
-      <ul style="list-style:none;padding:0;margin:0;">
+ <div class="juice-ref-qst9js" style="margin-top:2.5rem;padding:1rem 0;border-top:1px dashed #ccc;font-size:0.9rem;color:#666;">
+ <p style="font-weight:600;margin-bottom:0.5rem;">함께 보면 좋은 정보</p>
+ <ul style="list-style:none;padding:0;margin:0;">
 <li>자세한 기술 명세 가이드는 <a href="https://ko.wikipedia.org/" rel="noopener noreferrer" target="_blank">공식 가이드 커뮤니티</a>를 참고하십시오.</li>
-      </ul>
-    </div>
+ </ul>
+ </div>
 </body>
 </html>
